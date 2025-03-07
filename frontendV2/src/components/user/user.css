@@ -1,0 +1,168 @@
+/* styles.css */
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f8ff; /* Светло-синий фон */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.headerTitle {
+  color: #003366; /* Темно-синий */
+  margin-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #0073e6; /* Синий */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5; /* Темнее синий при наведении */
+}
+
+.button.active {
+  background-color: #004080; /* Еще темнее для активной кнопки */
+}
+
+.loading {
+  text-align: center;
+  color: #0073e6;
+}
+
+.error {
+  text-align: center;
+  color: #ff0000; /* Красный для ошибок */
+}
+
+.slotsHeader {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.slotList {
+  display: flex;
+  flex-wrap: wrap; /* Перенос на новую строку */
+  gap: 10px; /* Расстояние между слотами */
+  padding: 10px 0; /* Отступы сверху и снизу */
+  list-style: none;
+  margin: 0;
+}
+
+.slotButton {
+  background-color: #ffffff; /* Белый */
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 150px; /* Гибкая ширина, минимальная ширина 150px */
+  max-width: 200px; /* Максимальная ширина */
+  white-space: nowrap; /* Текст не переносится на новую строку */
+  cursor: pointer;
+  border: 1px solid #0073e6; /* Синяя рамка */
+  transition: background-color 0.3s ease;
+}
+
+.slotButton:hover {
+  background-color: #e6f2ff; /* Светло-синий при наведении */
+}
+
+.bookingFormContainer {
+  padding: 20px;
+  background-color: #ffffff; /* Белый */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bookingForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bookingForm input {
+  padding: 8px;
+  border: 1px solid #0073e6; /* Синяя рамка */
+  border-radius: 5px;
+}
+
+.bookingForm button {
+  background-color: #0073e6; /* Синий */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.bookingForm button:hover {
+  background-color: #005bb5; /* Темнее синий при наведении */
+}
+
+.bookingResult {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.bookingResult button {
+  background-color: #0073e6; /* Синий */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.bookingResult button:hover {
+  background-color: #005bb5; /* Темнее синий при наведении */
+}
+
+/* styles.css */
+.languageButton {
+  float: right;
+  margin-top: 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.languageButton:hover {
+  background-color: #005bb5;
+}

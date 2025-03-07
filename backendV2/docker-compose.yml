@@ -1,0 +1,24 @@
+services:
+  app:
+    container_name: backend
+    build: .
+    depends_on:
+      - db
+    ports:
+      - 8000:8000
+  db:
+    container_name: db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: aleksey
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_DB: queueDbv2
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - 5444:5432
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data/pgdata
+volumes:
+  pgdata:
+    driver: local 
